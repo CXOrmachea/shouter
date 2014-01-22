@@ -6,4 +6,10 @@ Dashboard
   <%= f.submit "Save" %>
 <% end %>
 
+<%= form_for @photo_shout do |f| %>
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <%= f.submit "Save" %>
+<% end %>
+
 <%= render @shouts %>
