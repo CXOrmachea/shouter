@@ -1,0 +1,9 @@
+Dashboard
+
+<%= form_for @shout do |f| %>
+  <%= f.label :body %>
+  <%= f.text_field :body %>
+  <%= f.submit "Save" %>
+<% end %>
+
+<%= render @shouts %>
