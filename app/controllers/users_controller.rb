@@ -6,6 +6,10 @@ class UsersController < ApplicationController
     @shouts = @user.shouts
   end
 
+  def index
+    @users = User.all
+  end
+
   def new
     @user = User.new
   end
